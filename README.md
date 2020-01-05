@@ -26,3 +26,6 @@ logThis();
 console.log("outer:" + this)         // outer:[object Window]
 ```
 Why this.name is `Global`, not `Local`? As we mentioned above: **`this` always point to the *last object* that called it**, when we call `logThis`, there isn't any object in front, so it will fall back to global object which is `Window`, so `logThis()` equal to `window.logThis()`.
+
+
+**to be continued**
